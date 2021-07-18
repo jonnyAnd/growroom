@@ -1,12 +1,235 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/argon-dashboard/assets/css/argon.min.css?v=1.2.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+ 
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<style type="text/css">
+/* Loopple Alert */
+.loopple-alert {
+  position: relative;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.loopple-alert.loopple-alert-gradient-dark {
+  color: #fff;
+  border-color: #45484b;
+  background: linear-gradient(87deg, #212529 0, #212229 100%) !important;
+}
+.loopple-alert.loopple-alert-dismissible .close {
+  top: 50%;
+  right: 24px;
+  padding: 0;
+  transform: translateY(-50%);
+  opacity: 1;
+  position: absolute;
+  color: inherit;
+  border: 0;
+  background: transparent;
+}
+.loopple-alert.loopple-alert-dismissible .close span {
+  color: #fff;
+}
+.loopple-fade {
+  transition: opacity 0.15s linear;
+}
 
-</body>
-</html>
+/* Loopple Button */
+.loopple-btn {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  transition: all 0.15s ease;
+  padding: 10px 20px;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  will-change: transform;
+}
+.loopple-btn.loopple-btn-white {
+  color: #212529;
+  border-color: #fff;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.loopple-btn.loopple-btn-white:hover {
+  color: #212529;
+  border-color: #fff;
+  background-color: #fff;
+}
+.loopple-btn.loopple-btn-white:focus, .loopple-btn.loopple-btn-white.focus {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 0 rgba(255, 255, 255, 0.5) l;
+}
+.loopple-btn.loopple-btn-white:not(:disabled):not(.disabled):active, .loopple-btn.loopple-btn-white:not(:disabled):not(.disabled).active {
+  color: #212529;
+  border-color: #fff;
+  background-color: #e6e6e6;
+}
+
+/* Loopple Utilities */
+.loopple-position-absolute {
+  position: absolute;
+}
+
+.loopple-position-sticky {
+  position: sticky;
+}
+
+.loopple-position-fixed {
+  position: fixed;
+}
+
+.loopple-z-index-9999{
+  z-index: 9999;
+}
+
+.loopple-bottom-2 {
+  bottom: 8px;
+}
+
+.loopple-mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.loopple-text-center {
+  text-align: center;
+}
+
+.loopple-right-0 {
+  right: 0;
+}
+
+.loopple-left-0 {
+  left: 0;
+}
+
+.loopple-w-50 {
+  width: 50%;
+}
+
+.loopple-ml-2,
+.loopple-mx-2 {
+  margin-left: 8px;
+}
+
+.loopple-opacity-0{
+  opacity: 0;
+}
+
+</style>
+
+
+
+<body class="g-sidenav-show g-sidenav-pinned" cz-shortcut-listen="true">
+
+    
+
+    <div class="col-xl-6">
+                    <!-- Progress track -->
+                    <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header">
+                            <!-- Title -->
+                            <h5 class="h3 mb-0">Progress track</h5>
+                        </div>
+                        <!-- Card body -->
+                        <div class="card-body">
+                            <!-- List group -->
+                            <ul class="list-group list-group-flush list my--3">
+                                <li class="list-group-item px-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <!-- Avatar -->
+                                            <a href="#" class="avatar rounded-circle">
+                                                <img alt="Image placeholder" src="https://demos.creative-tim.com/argon-dashboard-pro/assets/img/theme/bootstrap.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Argon Design System</h5>
+                                            <div class="progress progress-xs mb-0">
+                                                <div class="progress-bar bg-orange" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <!-- Avatar -->
+                                            <a href="#" class="avatar rounded-circle">
+                                                <img alt="Image placeholder" src="https://demos.creative-tim.com/argon-dashboard-pro/assets/img/theme/angular.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Angular Now UI Kit PRO</h5>
+                                            <div class="progress progress-xs mb-0">
+                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <!-- Avatar -->
+                                            <a href="#" class="avatar rounded-circle">
+                                                <img alt="Image placeholder" src="https://demos.creative-tim.com/argon-dashboard-pro/assets/img/theme/sketch.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Black Dashboard</h5>
+                                            <div class="progress progress-xs mb-0">
+                                                <div class="progress-bar bg-red" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <!-- Avatar -->
+                                            <a href="#" class="avatar rounded-circle">
+                                                <img alt="Image placeholder" src="https://demos.creative-tim.com/argon-dashboard-pro/assets/img/theme/react.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <h5>React Material Dashboard</h5>
+                                            <div class="progress progress-xs mb-0">
+                                                <div class="progress-bar bg-teal" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+    <script src="https://demos.creative-tim.com/argon-dashboard/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://demos.creative-tim.com/argon-dashboard/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://demos.creative-tim.com/argon-dashboard/assets/vendor/js-cookie/js.cookie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://demos.creative-tim.com/argon-dashboard/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+    <script src="https://demos.creative-tim.com/argon-dashboard/assets/js/argon.min.js?v=1.2.0"></script><div class="backdrop d-xl-none" data-action="sidenav-unpin" data-target="undefined"></div>
+    
+
+
+    <script>
+       // document.getElementById("demo").innerHTML = "Hello JavaScript!";
+         </script> 
+
+
+
+
+</body></html>
